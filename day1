@@ -43,6 +43,6 @@ int main() {
 	cout<<"enter details"<<endl;
 	cin.get(k.name, 50);
 	cin>>k.id;
-	cout<<"employee name:"<< k.name<<endl;
+	cout<<"employee name:"<< k.name;
 	cout<<" employee id:"<< k.id;
 }
