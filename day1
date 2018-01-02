@@ -26,3 +26,23 @@ int main() {
    return 0;
 	
 }
+
+
+
+#include <iostream>
+
+using namespace std;
+struct employee
+{
+    char name[50];
+    int id;
+};
+
+int main() {
+	employee k;
+	cout<<"enter details"<<endl;
+	cin.get(k.name, 50);
+	cin>>k.id;
+	cout<<"employee name:"<< k.name<<endl;
+	cout<<" employee id:"<< k.id;
+}
