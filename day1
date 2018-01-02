@@ -1,4 +1,4 @@
-
+Displaying of first 10 natural numberrs
 
 #include <iostream>
 
@@ -14,6 +14,7 @@ int main() {
 	
 }
 
+swaping of two numbers
 
 #include <iostream>
 
@@ -27,7 +28,7 @@ int main() {
 	
 }
 
-
+sample struct program 
 
 #include <iostream>
 
