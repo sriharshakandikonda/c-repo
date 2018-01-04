@@ -68,3 +68,68 @@ int main(void) {
 
    return 0;
 }
+
+
+======================================================================
+
+with and without parameters (constructors)
+
+#include<iostream.h>
+#include<conio.h>
+#include<string.h>
+
+class Employee
+{
+  public:
+  int id;
+  char name[12];
+  float salary;
+  float tax;
+
+  Employee()
+  {
+   cout<<"Non-parameterized consturctor"<<endl;
+   id = 1001;
+   strcpy(name, "harsha");
+   salary = 1234.45;
+  }
+
+  Employee(int i , char j[], float k)
+  {
+   cout<<"Parameterized constructor"<<endl;
+   id = i;
+   strcpy(name,j);
+   salary = k;
+  }
+  //User-defined Function
+  caltax()
+  {
+    tax = salary*0.2;
+    cout<<"Tax Amount: "<<tax<<endl;
+  }
+  //User-defined Function
+  netsalary()
+  {
+   cout << "Net Salary:"<<salary-tax<<endl;
+  }
+  //USER-DEFINED FUNCTION
+  display()
+  {
+   cout<<"ID:"<<id<<" NAME:"<<name<<" SALARY:"<<salary<<endl;
+  }
+};
+int main()
+{
+ clrscr();
+ Employee e1;
+ Employee e2 = Employee(12,"phalguna",545.54) ;
+ //clrscr();
+ e1.display();
+ e2.display();
+ e1.caltax();
+ e1.netsalary();
+ e2.caltax();
+ e2.netsalary();
+ getch();
+ return 0;
+}
