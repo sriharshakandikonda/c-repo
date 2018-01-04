@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+class employee
+{
+    public:
+    int b;
+    string name;
+    void insert(int l,string n)
+    {
+        b=l;
+        name=n;
+    }
+    void display()
+    {
+        cout<<b<<name<<endl;
+    }
+};
+int main()
+{
+   employee e1;
+   employee e2;
+   e1.insert(201,"phalguna");
+   e2.insert(301,"harsha");
+   e1.display();
+   e2.display();
+   return 0;    
+}
